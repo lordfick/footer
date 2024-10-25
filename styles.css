@@ -1,0 +1,124 @@
+        /* Reset some basic styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Footer Container */
+        footer {
+            background-color: skyblue;
+            color: #fff;
+            padding: 40px;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* Footer Section */
+        .footer-section {
+            flex: 1;
+            min-width: 200px;
+            margin: 20px;
+        }
+
+        /* Footer Logo */
+        .footer-logo {
+            width: 100px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        /* Footer Titles */
+        .footer-section h3 {
+            border-bottom: 2px solid #fff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 18px;
+            position: relative;
+        }
+
+        /* Animated Border Effect */
+        .footer-section h3:after {
+            content: '';
+            width: 0;
+            height: 2px;
+            background-color: #f39c12;
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            transition: width 0.4s;
+        }
+
+        .footer-section h3:hover:after {
+            width: 100%;
+        }
+
+        /* Links Styling */
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin: 10px 0;
+        }
+
+        .footer-section ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-section ul li a:hover {
+            color: #f39c12;
+        }
+
+        /* Services Section */
+        .footer-section p {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        /* Social Icons */
+        .social-icons a {
+            color: #fff;
+            font-size: 24px;
+            margin-right: 15px;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #f39c12;
+        }
+
+        /* Responsive Footer */
+        @media (max-width: 768px) {
+            .footer-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer-section {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            .social-icons {
+                justify-content: center;
+            }
+        }
+    
